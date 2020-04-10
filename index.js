@@ -16,7 +16,7 @@ const parsedPJ = JSON.parse(packageJson)
 ;(async () => {
   try {
     console.log(
-      chalk.bgGrey.magentaBright("Convert your React app to use Preact X\n")
+      chalk.bgGrey.magentaBright("Convert your React app to use Preact X")
     )
 
     const { packageManager, framework } = await inquirer.prompt([
