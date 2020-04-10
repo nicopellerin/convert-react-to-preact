@@ -1,4 +1,4 @@
-#!/usr/bin/exec node
+#!/usr/bin/env node
 const { program } = require("commander")
 const inquirer = require("inquirer")
 const fs = require("fs")
@@ -16,7 +16,7 @@ const parsedPJ = JSON.parse(packageJson)
 ;(async () => {
   try {
     console.log(
-      chalk.bgGrey.magentaBright("Convert your React app to use Preact X")
+      chalk.bgGrey.magentaBright("Convert your React app to use Preact X\n")
     )
 
     const { packageManager, framework } = await inquirer.prompt([
@@ -50,10 +50,11 @@ const parsedPJ = JSON.parse(packageJson)
         command.remove = "uninstall"
     }
 
-    console.log(command)
-
     // Start
-    console.log(emoji.get("stopwatch"), chalk.cyan(" Starting conversion..."))
+    console.log(
+      "\n" + emoji.get("stopwatch"),
+      chalk.cyan(" Starting conversion...")
+    )
 
     // Removes react
     if (Object.keys(parsedPJ.dependencies).includes("react")) {
