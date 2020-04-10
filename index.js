@@ -53,7 +53,7 @@ const parsedPJ = JSON.parse(packageJson)
     // Start
     console.log(
       "\n" + emoji.get("stopwatch"),
-      chalk.cyan(" Starting conversion...")
+      chalk.cyan(" Starting conversion...\n")
     )
 
     // Removes react
@@ -126,7 +126,7 @@ const parsedPJ = JSON.parse(packageJson)
     const time = Date.now() - start
 
     console.log(
-      emoji.get("white_check_mark"),
+      "\n" + emoji.get("white_check_mark"),
       chalk.bold.green("Done!"),
       chalk.gray(`${time / 1000}s`)
     )
