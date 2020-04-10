@@ -1,0 +1,20 @@
+{
+  "name": "react-to-preact-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "react-to-preact": "index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^5.0.0",
+    "inquirer": "^7.1.0",
+    "node-emoji": "^1.10.0",
+    "preact": "^10.4.0",
+    "preact-render-to-string": "^5.1.5",
+    "react": "preact-compat/react#1.x",
+    "react-dom": "preact-compat/react-dom#1.x",
+    "react-ssr-prepass": "npm:preact-ssr-prepass"
+  }
+}
